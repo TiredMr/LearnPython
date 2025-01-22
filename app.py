@@ -7,12 +7,27 @@ class MeuPerfil:
         self.nome = nome
         self.idade = idade
 
-    def mostrar_nome(self):
-        print("Meu nome é: " + self.nome)
-    
-    def mostrar_idade(self):
-        print("Eu tenho: " + self.idade)
+    def mostrar_perfil(self):
+        #print("Meu nome é: " + self.nome + " e tenho: " + self.idade + " anos.")
+        print('O nome é: {}'.format(self.nome),f"e tenho {self.idade} anos!")
 
-x = MeuPerfil('Fabricio', '21')
+class OutroPerfil:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+    def mostrar_perfil(self):
+        print("O nome é: " + self.nome + " e a idade é " + self.idade)
+        print('O nome é: {}! '.format(self.nome),f" e a idade é {self.idade} ")
 
-MeuPerfil.mostrar_nome(self=x)
+
+def main():
+    x = MeuPerfil('Fabricio', '21')
+    # y = input("Qual seu nome?")
+    # z = input("Qual sua idade?")
+    MeuPerfil.mostrar_perfil(self=x)
+    # print(y, z)
+
+if __name__ == "__main__":
+    main()
+
+
