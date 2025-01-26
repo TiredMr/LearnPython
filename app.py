@@ -24,8 +24,10 @@ def main():
     x = MeuPerfil('Fabricio', '21')
     y = input("Qual seu nome?")
     z = int(input("Qual sua idade?"))
+    
     #MeuPerfil.mostrar_perfil(self=x)
     # print(y, z)
+    
     if(y == "Fabricio" and z == 21):
         print("É você mesmo!")
     else: print("Você é um impostor!!!!")
